@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>THE EDITORS</title>
 
 <style>
-
 body{
 font-family: Arial, sans-serif;
 margin:0;
@@ -17,14 +15,21 @@ color:white;
 
 header{
 background:#020617;
-padding:15px;
+padding:15px 20px;
 display:flex;
 justify-content:space-between;
 align-items:center;
 }
 
-header h1{
-margin:0;
+.logo{
+display:flex;
+align-items:center;
+gap:10px;
+}
+
+.logo svg{
+width:40px;
+height:40px;
 }
 
 nav a{
@@ -57,8 +62,15 @@ border-radius:10px;
 width:250px;
 }
 
-iframe{
-border:none;
+.video-grid{
+display:flex;
+flex-wrap:wrap;
+gap:20px;
+justify-content:center;
+margin-top:30px;
+}
+
+.video-grid iframe{
 border-radius:10px;
 }
 
@@ -75,114 +87,109 @@ footer{
 background:#020617;
 text-align:center;
 padding:20px;
+margin-top:40px;
 }
-
 </style>
 </head>
 
 <body>
 
 <header>
+
+<div class="logo">
+
+<!-- Simple Logo -->
+<svg viewBox="0 0 100 100" fill="white">
+<circle cx="30" cy="30" r="10"/>
+<circle cx="70" cy="30" r="10"/>
+<rect x="20" y="45" width="60" height="10"/>
+<rect x="35" y="60" width="30" height="20"/>
+</svg>
+
 <h1>THE EDITORS</h1>
+
+</div>
 
 <nav>
 <a href="#home">Home</a>
-<a href="#portfolio">Portfolio</a>
+<a href="#portfolio">Our Work</a>
 <a href="#pricing">Pricing</a>
 <a href="#contact">Contact</a>
 </nav>
 
 </header>
 
-
 <section class="hero" id="home">
-
 <h2>Professional Video Editing</h2>
-
-<p>YouTube • Instagram • TikTok Edits</p>
-
+<p>Gaming edits • YouTube edits • Shorts & Reels</p>
 <button>Order Now</button>
-
 </section>
-
 
 <section id="portfolio">
-
 <h2>Our Work</h2>
-<p>Some of our previous edits</p>
+<p>Watch some of our edits below</p>
 
-<div class="cards">
+<div class="video-grid">
 
-<div class="card">
-<iframe width="100%" height="200"
-src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
-allowfullscreen>
-</iframe>
-</div>
+<!-- Replace video links later -->
+<iframe width="300" height="170"
+src="https://www.youtube.com/embed/VIDEOID"
+title="YouTube video"
+allowfullscreen></iframe>
 
-<div class="card">
-<iframe width="100%" height="200"
-src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
-allowfullscreen>
-</iframe>
-</div>
+<iframe width="300" height="170"
+src="https://www.youtube.com/embed/VIDEOID"
+title="YouTube video"
+allowfullscreen></iframe>
 
-<div class="card">
-<iframe width="100%" height="200"
-src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
-allowfullscreen>
-</iframe>
-</div>
+<iframe width="300" height="170"
+src="https://www.youtube.com/embed/VIDEOID"
+title="YouTube video"
+allowfullscreen></iframe>
 
 </div>
 
 </section>
 
-
 <section id="pricing">
-
 <h2>Pricing</h2>
 
 <div class="cards">
 
 <div class="card">
-<h3>Basic</h3>
+<h3>Short Edit</h3>
 <p>₹200</p>
-<p>Short edit</p>
+<p>Short reels or clips</p>
 </div>
 
 <div class="card">
-<h3>Pro</h3>
+<h3>Pro Edit</h3>
 <p>₹350</p>
-<p>Pro edit</p>
+<p>Gaming montage edit</p>
 </div>
 
 <div class="card">
 <h3>Premium</h3>
 <p>₹700</p>
-<p>Full video edit</p>
+<p>Full YouTube video edit</p>
 </div>
 
 </div>
 
 </section>
 
-
 <section id="contact">
-
 <h2>Contact Us</h2>
 
 <p>Email: yourbusiness@email.com</p>
-
 <p>Instagram: @yourpage</p>
+
+<p>Response time: Within 24 hours</p>
 
 </section>
 
-
 <footer>
-
 <p>© 2026 THE EDITORS</p>
-
 </footer>
 
 </body>
